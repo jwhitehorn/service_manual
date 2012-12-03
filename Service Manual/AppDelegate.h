@@ -21,4 +21,6 @@
 @property (strong) NSURL *basePath;
 @property (strong) NSUserDefaults *userDefaults;
 
+- (IBAction) presentDirectoryPicker:(id)sender;
+
 @end

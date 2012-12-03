@@ -44,6 +44,10 @@
     return NSTerminateNow;
 }
 
+- (void) presentDirectoryPicker:(id)sender{
+    [self presentDirectoryPicker];
+}
+
 - (void) presentDirectoryPicker{
     NSOpenPanel *panel = [NSOpenPanel openPanel];
     [panel setCanChooseDirectories:true];
