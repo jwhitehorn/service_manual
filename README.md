@@ -12,9 +12,9 @@ This app does not actually contain any service manual content, and therefore doe
 
 # Getting Started #
 
-1) Download the latest version of the app from [here](https://github.com/jwhitehorn/service_manual/downloads).
-2) Copy the app to your "Applications" folder, and launch the app.
-3) When prompted with a file open dialog, navigate to your CD (containing the factory service manual) and click "Open".
+1. Download the latest version of the app from [here](https://github.com/jwhitehorn/service_manual/downloads).
+2. Copy the app to your "Applications" folder, and launch the app.
+3. When prompted with a file open dialog, navigate to your CD (containing the factory service manual) and click "Open".
 
 The application will remember the last location it used for the service manual. So, if you re-launch the app and the CD is still in your Mac, it will not prompt you again.
 
