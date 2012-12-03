@@ -1,5 +1,6 @@
 # Overview #
 
+![Screenshot](https://raw.github.com/jwhitehorn/service_manual/master/Screenshots/screenshot_1.png)
 
 TODO: Actually write a readme.
 
