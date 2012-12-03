@@ -1,8 +1,20 @@
 # Overview #
 
+"Service Manual" (an app without any better of a name) is an app that allows you to use the factory service manual on your Mac.
+
 ![Screenshot](https://raw.github.com/jwhitehorn/service_manual/master/Screenshots/screenshot_1.png)
 
-TODO: Actually write a readme.
+This app was created out of the desire to actually _use_ the factory service manual for my Jeep on my Mac. For some reason the electronic manual sold by Chrysler uses some really backwards technologies and only works with IE 6.
+
+This app does not actually contain any service manual content, and therefore does not violate any copyrights. To use this app you must first own the factory service manual CD, this app merely exposes it's contents in a Mac friendly fashion.
+
+# Getting Started #
+
+1) Download the latest version of the app from [here](https://github.com/jwhitehorn/service_manual/downloads).
+2) Copy the app to your "Applications" folder, and launch the app.
+3) When prompted with a file open dialog, navigate to your CD (containing the factory service manual) and click "Open".
+
+The application will remember the last location it used for the service manual. So, if you re-launch the app and the CD is still in your Mac, it will not prompt you again.
 
 ## License ##
 
