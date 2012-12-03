@@ -2,6 +2,8 @@
 
 "Service Manual" (an app without any better of a name) is an app that allows you to use the factory service manual on your Mac.
 
+** Note: ** I have only tested this on my 2007 Jeep Wrangler service manual. In theory it could work on many different Chrysler factory service manuals with minor tweaking.
+
 ![Screenshot](https://raw.github.com/jwhitehorn/service_manual/master/Screenshots/screenshot_1.png)
 
 This app was created out of the desire to actually _use_ the factory service manual for my Jeep on my Mac. For some reason the electronic manual sold by Chrysler uses some really backwards technologies and only works with IE 6.
