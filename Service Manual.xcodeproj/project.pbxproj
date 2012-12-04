@@ -23,6 +23,7 @@
 		96E6377B166880B10091474D /* NSString+JRStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E6377A166880B10091474D /* NSString+JRStringAdditions.m */; };
 		96E63795166968D40091474D /* MenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E63794166968D40091474D /* MenuItem.m */; };
 		96F16806166969CF00BB1F90 /* MenuDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F16804166969CE00BB1F90 /* MenuDataSource.m */; };
+		96F27429166DADBB003ACCD6 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96F27428166DADBB003ACCD6 /* Sparkle.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		96E63794166968D40091474D /* MenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuItem.m; sourceTree = "<group>"; };
 		96F16804166969CE00BB1F90 /* MenuDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuDataSource.m; sourceTree = "<group>"; };
 		96F16805166969CE00BB1F90 /* MenuDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuDataSource.h; sourceTree = "<group>"; };
+		96F27428166DADBB003ACCD6 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				96832F591667027A00669542 /* Foundation.framework in Frameworks */,
 				96B4D02E1666D2A6008D84FE /* WebKit.framework in Frameworks */,
 				96B4D01116655585008D84FE /* Cocoa.framework in Frameworks */,
+				96F27429166DADBB003ACCD6 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +117,7 @@
 		96B4D00F16655585008D84FE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				96F27428166DADBB003ACCD6 /* Sparkle.framework */,
 				96B4D02D1666D2A6008D84FE /* WebKit.framework */,
 				965FCF36166876DF00683159 /* libxml2.2.dylib */,
 				96B4D01016655585008D84FE /* Cocoa.framework */,
@@ -324,7 +328,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Service Manual/Service Manual-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
@@ -339,7 +346,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Service Manual/Service Manual-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
