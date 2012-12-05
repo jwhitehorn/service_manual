@@ -11,6 +11,7 @@
 		965FCF33166876C500683159 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 965FCF2E166876C500683159 /* TFHppleElement.m */; };
 		965FCF34166876C500683159 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 965FCF31166876C500683159 /* XPathQuery.m */; };
 		965FCF37166876DF00683159 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 965FCF36166876DF00683159 /* libxml2.2.dylib */; };
+		967CD752166EF12500BCAAF1 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 967CD751166EF12500BCAAF1 /* dsa_pub.pem */; };
 		96832F591667027A00669542 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B4D01516655585008D84FE /* Foundation.framework */; };
 		96A56F74166BFF36004E7C12 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 96A56F73166BFF36004E7C12 /* README.md */; };
 		96B4D01116655585008D84FE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B4D01016655585008D84FE /* Cocoa.framework */; };
@@ -48,6 +49,7 @@
 		965FCF30166876C500683159 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
 		965FCF31166876C500683159 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
 		965FCF36166876DF00683159 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		967CD751166EF12500BCAAF1 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		96A56F73166BFF36004E7C12 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		96B4D00C16655585008D84FE /* Service Manual.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Service Manual.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96B4D01016655585008D84FE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -170,6 +172,7 @@
 		96B4D01716655585008D84FE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				967CD751166EF12500BCAAF1 /* dsa_pub.pem */,
 				96B4D01816655585008D84FE /* Service Manual-Info.plist */,
 				96B4D01916655585008D84FE /* InfoPlist.strings */,
 				96B4D01C16655585008D84FE /* main.m */,
@@ -235,6 +238,7 @@
 				96B4D02116655585008D84FE /* Credits.rtf in Resources */,
 				96B4D02716655585008D84FE /* MainMenu.xib in Resources */,
 				96A56F74166BFF36004E7C12 /* README.md in Resources */,
+				967CD752166EF12500BCAAF1 /* dsa_pub.pem in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
