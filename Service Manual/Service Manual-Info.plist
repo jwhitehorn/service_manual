@@ -30,6 +30,8 @@
 	<string>MainMenu</string>
 	<key>SUPublicDSAKeyFile</key>
 	<string>dsa_pub.pem</string>
+	<key>SUFeedURL</key>
+	<string>https://raw.github.com/gist/4211908/appcast.xml</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 </dict>
