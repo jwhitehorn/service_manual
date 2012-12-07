@@ -21,7 +21,6 @@
 		96B4D02416655585008D84FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B4D02316655585008D84FE /* AppDelegate.m */; };
 		96B4D02716655585008D84FE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96B4D02516655585008D84FE /* MainMenu.xib */; };
 		96B4D02E1666D2A6008D84FE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B4D02D1666D2A6008D84FE /* WebKit.framework */; };
-		96E034A6167197DF00382DE6 /* release_notes.html in Resources */ = {isa = PBXBuildFile; fileRef = 96E034A5167197DF00382DE6 /* release_notes.html */; };
 		96E6377B166880B10091474D /* NSString+JRStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E6377A166880B10091474D /* NSString+JRStringAdditions.m */; };
 		96E63795166968D40091474D /* MenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E63794166968D40091474D /* MenuItem.m */; };
 		96F16806166969CF00BB1F90 /* MenuDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F16804166969CE00BB1F90 /* MenuDataSource.m */; };
@@ -66,7 +65,6 @@
 		96B4D02316655585008D84FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		96B4D02616655585008D84FE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		96B4D02D1666D2A6008D84FE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		96E034A5167197DF00382DE6 /* release_notes.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = release_notes.html; sourceTree = "<group>"; };
 		96E63779166880B10091474D /* NSString+JRStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JRStringAdditions.h"; sourceTree = "<group>"; };
 		96E6377A166880B10091474D /* NSString+JRStringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JRStringAdditions.m"; sourceTree = "<group>"; };
 		96E63793166968D40091474D /* MenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuItem.h; sourceTree = "<group>"; };
@@ -116,7 +114,6 @@
 		96B4D00116655585008D84FE = {
 			isa = PBXGroup;
 			children = (
-				96E034A5167197DF00382DE6 /* release_notes.html */,
 				96A56F73166BFF36004E7C12 /* README.md */,
 				965FCF2A166876C500683159 /* Hpple */,
 				96B4D01616655585008D84FE /* Service Manual */,
@@ -242,7 +239,6 @@
 				96B4D02716655585008D84FE /* MainMenu.xib in Resources */,
 				96A56F74166BFF36004E7C12 /* README.md in Resources */,
 				967CD752166EF12500BCAAF1 /* dsa_pub.pem in Resources */,
-				96E034A6167197DF00382DE6 /* release_notes.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
