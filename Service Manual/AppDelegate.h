@@ -13,6 +13,8 @@
 @interface AppDelegate : NSObject <NSApplicationDelegate, NSOutlineViewDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet NSWindow *welcomeWindow;
+
 @property (assign) IBOutlet WebView *webView;
 @property (assign) IBOutlet NSView *leftView;
 @property (strong) IBOutlet NSOutlineView *outlineView;

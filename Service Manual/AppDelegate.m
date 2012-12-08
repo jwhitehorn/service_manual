@@ -10,7 +10,6 @@
 #import <Foundation/NSXMLDocument.h>
 #import "NSString+JRStringAdditions.h"
 #import "MenuItem.h"
-#import "WelcomeWindowController.h"
 
 @implementation AppDelegate
 @synthesize webView, leftView, outlineView, basePath, userDefaults;
@@ -30,7 +29,7 @@
     self.basePath = [userDefaults URLForKey:@"lastDirectory"];
     NSError *error;
     if(!basePath || [basePath checkResourceIsReachableAndReturnError:&error] == false){
-        [self presentDirectoryPicker];
+        [self.welcomeWindow setIsVisible:true];
     }else{
         [self setupWithDirectory:basePath];
     }
@@ -72,9 +71,8 @@
     [outlineView reloadData];
     
     [outlineView setDelegate:self];
-    if(![self.window isVisible]){
-        [self.window setIsVisible:true];
-    }
+    [self.window setIsVisible:true];
+    [self.welcomeWindow setIsVisible:false];
 }
 
 - (void)webView:(WebView *)webView decidePolicyForNavigationAction:(NSDictionary *)actionInformation request:(NSURLRequest *)request frame:(WebFrame *)frame decisionListener:(id < WebPolicyDecisionListener >)listener{

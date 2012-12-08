@@ -13,8 +13,6 @@
 		965FCF37166876DF00683159 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 965FCF36166876DF00683159 /* libxml2.2.dylib */; };
 		967CD752166EF12500BCAAF1 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 967CD751166EF12500BCAAF1 /* dsa_pub.pem */; };
 		96832F591667027A00669542 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B4D01516655585008D84FE /* Foundation.framework */; };
-		96A56AAF1672E6C700DC2128 /* WelcomeWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96A56AAE1672E6C700DC2128 /* WelcomeWindow.xib */; };
-		96A56AB31672E88200DC2128 /* WelcomeWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A56AB21672E88200DC2128 /* WelcomeWindowController.m */; };
 		96A56F74166BFF36004E7C12 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 96A56F73166BFF36004E7C12 /* README.md */; };
 		96B4D01116655585008D84FE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B4D01016655585008D84FE /* Cocoa.framework */; };
 		96B4D01B16655585008D84FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96B4D01916655585008D84FE /* InfoPlist.strings */; };
@@ -52,9 +50,6 @@
 		965FCF31166876C500683159 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
 		965FCF36166876DF00683159 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
 		967CD751166EF12500BCAAF1 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
-		96A56AAE1672E6C700DC2128 /* WelcomeWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomeWindow.xib; sourceTree = "<group>"; };
-		96A56AB11672E88200DC2128 /* WelcomeWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeWindowController.h; sourceTree = "<group>"; };
-		96A56AB21672E88200DC2128 /* WelcomeWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeWindowController.m; sourceTree = "<group>"; };
 		96A56F73166BFF36004E7C12 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		96B4D00C16655585008D84FE /* Service Manual.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Service Manual.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96B4D01016655585008D84FE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -170,9 +165,6 @@
 				96E63794166968D40091474D /* MenuItem.m */,
 				96F16805166969CE00BB1F90 /* MenuDataSource.h */,
 				96F16804166969CE00BB1F90 /* MenuDataSource.m */,
-				96A56AAE1672E6C700DC2128 /* WelcomeWindow.xib */,
-				96A56AB11672E88200DC2128 /* WelcomeWindowController.h */,
-				96A56AB21672E88200DC2128 /* WelcomeWindowController.m */,
 			);
 			path = "Service Manual";
 			sourceTree = "<group>";
@@ -247,7 +239,6 @@
 				96B4D02716655585008D84FE /* MainMenu.xib in Resources */,
 				96A56F74166BFF36004E7C12 /* README.md in Resources */,
 				967CD752166EF12500BCAAF1 /* dsa_pub.pem in Resources */,
-				96A56AAF1672E6C700DC2128 /* WelcomeWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +257,6 @@
 				96E6377B166880B10091474D /* NSString+JRStringAdditions.m in Sources */,
 				96E63795166968D40091474D /* MenuItem.m in Sources */,
 				96F16806166969CF00BB1F90 /* MenuDataSource.m in Sources */,
-				96A56AB31672E88200DC2128 /* WelcomeWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
