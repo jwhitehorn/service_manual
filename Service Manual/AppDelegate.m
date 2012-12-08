@@ -34,10 +34,6 @@
     }else{
         [self setupWithDirectory:basePath];
     }
-    
-    WelcomeWindowController* controller = [[WelcomeWindowController alloc]
-                                      initWithWindowNibName:@"WelcomeWindow"];
-    [controller showWindow:nil];
 }
 
 - (NSApplicationTerminateReply)applicationShouldTerminate:(NSApplication *)sender{
@@ -76,6 +72,9 @@
     [outlineView reloadData];
     
     [outlineView setDelegate:self];
+    if(![self.window isVisible]){
+        [self.window setIsVisible:true];
+    }
 }
 
 - (void)webView:(WebView *)webView decidePolicyForNavigationAction:(NSDictionary *)actionInformation request:(NSURLRequest *)request frame:(WebFrame *)frame decisionListener:(id < WebPolicyDecisionListener >)listener{
