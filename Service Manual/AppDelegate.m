@@ -10,6 +10,7 @@
 #import <Foundation/NSXMLDocument.h>
 #import "NSString+JRStringAdditions.h"
 #import "MenuItem.h"
+#import "WelcomeWindowController.h"
 
 @implementation AppDelegate
 @synthesize webView, leftView, outlineView, basePath, userDefaults;
@@ -33,6 +34,10 @@
     }else{
         [self setupWithDirectory:basePath];
     }
+    
+    WelcomeWindowController* controller = [[WelcomeWindowController alloc]
+                                      initWithWindowNibName:@"WelcomeWindow"];
+    [controller showWindow:nil];
 }
 
 - (NSApplicationTerminateReply)applicationShouldTerminate:(NSApplication *)sender{
