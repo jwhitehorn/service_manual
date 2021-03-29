@@ -53,18 +53,20 @@
     [panel setCanChooseDirectories:true];
     [panel setCanChooseFiles:false];
     [panel beginWithCompletionHandler:^(NSInteger result){
-        if(result == NSFileHandlingPanelOKButton){
+        if(result == NSModalResponseOK /*NSFileHandlingPanelOKButton*/){
             NSURL *path = [[panel URLs] objectAtIndex:0];
             self.basePath = path;
-            [userDefaults setURL:basePath forKey:@"lastDirectory"];
-            [userDefaults synchronize];
+            [self.userDefaults setURL:self.basePath forKey:@"lastDirectory"];
+            [self.userDefaults synchronize];
             [self setupWithDirectory:path];
         }
     }];
 }
 
 - (void) setupWithDirectory:(NSURL *)baseURI{
-    NSURL *menuPath = [NSURL URLWithString:@"./en_US/y2007/jk/si/jk_tree_si.htm" relativeToURL:baseURI];
+    //NSURL *menuPath = [NSURL URLWithString:@"./en_US/y2007/jk/si/jk_tree_si.htm" relativeToURL:baseURI];
+    NSURL *menuPath = [baseURI URLByAppendingPathComponent:@"en_US/y2007/jk/si/jk_tree_si.htm"];
+    
     
     self.dataSource = [[MenuDataSource alloc] initWithMenuPath:menuPath];
     [outlineView setDataSource:self.dataSource];
@@ -92,7 +94,8 @@
     if(shouldSelect){
         NSString *file = [item filename];
         
-        NSURL *path = [NSURL URLWithString:[NSString stringWithFormat:@"./en_US/y2007/jk/si/%@", file] relativeToURL:basePath];
+        //NSURL *path = [NSURL URLWithString:[NSString stringWithFormat:@"./en_US/y2007/jk/si/%@", file] relativeToURL:basePath];
+        NSURL *path = [basePath URLByAppendingPathComponent:[NSString stringWithFormat:@"en_US/y2007/jk/si/%@", file]];
         [self displayDocument:path];
         
         [self.window setTitle:[NSString stringWithFormat:@"Service Manual - %@", [item name]]];
